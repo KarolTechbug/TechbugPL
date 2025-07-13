@@ -9,6 +9,18 @@
         <link rel="icon" href="assets/images/favicon.png" type="image/webp">
         <title>Witam na Tech Stronie!</title>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style>
+    .page-item-each.narrow {
+        max-width: 80%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+
     </head>
     <body>
         <!-- Snowfall Background Animation -->
@@ -51,11 +63,28 @@
                     </div>
 <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://amzn.to/4dPMJD2" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/usb.png" src="assets/images/powerbank.jpg" alt="GitHub @ [User]"/>
+                        <a id="powerbank-button" class="page-item-each py-10 flex-both-center" href="#">
+
+                            <img class="link-each-image" src="assets/images/powerbank.png" alt="GitHub @ [User]"/>
                             <span class=" item-title text-center">Powerbank (około 6h pracy)</span>
                         </a>
                     </div>
+
+<div id="powerbank-extra" style="display: none;">
+    <div class="page-item-wrap relative">
+        <a target="_blank" class="page-item-each py-10 flex-both-center narrow" href="https://allegro.pl/oferta/powerbank-szybka-ladowarka-pd-20w-qc-3-0-usb-c-a-micro-20000-mah-topk-16744465255?utm_medium=afiliacja&utm_source=ctr_2&utm_campaign=a118dbc3-a075-4b8a-8275-8cdd49984d52&utm_content=9d9297f39187#">
+            <img class="link-each-image" src="assets/images/powerbank.jpg" alt="Powerbank 1"/>
+            <span class="item-title text-center">TOPK PD 20W 20000 mAh</span>
+        </a>
+    </div>
+    <div class="page-item-wrap relative">
+        <a target="_blank" class="page-item-each py-10 flex-both-center narrow" href="https://allegro.pl/oferta/baseus-power-bank-20000mah-20w-pd-3x-usb-usb-c-typ-c-3a-qc-3-0-bezpieczny-17473024806?utm_medium=afiliacja&utm_source=ctr_2&utm_campaign=a118dbc3-a075-4b8a-8275-8cdd49984d52&utm_content=138b395893d8#">
+            <img class="link-each-image" src="assets/images/baseus.webp" alt="Powerbank 2"/>
+            <span class="item-title text-center">BASEUS PD 20W 20000 mAh</span>
+        </a>
+    </div>
+</div>
+
  <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
                         <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://amzn.to/408hpMP" data-id="261685" data-type="page_item">
@@ -65,12 +94,30 @@
                     </div>
  <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
-                        <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://amzn.to/48eoptC" data-id="261685" data-type="page_item">
-                            <img class="link-each-image" data-src="assets/images/usb.png" src="assets/images/routerhuawei.jpg" alt="GitHub @ [User]"/>
-                            <span class=" item-title text-center">Router Huawei E8372h-320 <br>(najlepiej dwa)</span>
+                        <a id="router-button" class="page-item-each py-10 flex-both-center" href="#">
+
+                            <img class="link-each-image" src="assets/images/router.png" alt="GitHub @ [User]"/>
+                            <span class=" item-title text-center">Router<br>(najlepiej dwa)</span>
                         </a>
                     </div>
                 </div>
+
+<div id="router-extra" style="display: none;">
+    
+    <div class="page-item-wrap relative">
+        <a target="_blank" class="page-item-each py-10 flex-both-center narrow" href="https://amzn.to/48eoptC">
+            <img class="link-each-image" src="assets/images/routerhuawei.jpg" alt="Powerbank 2"/>
+            <span class="item-title text-center">Huawei E8372h-320</span>
+        </a>
+    </div>
+<div class="page-item-wrap relative">
+        <a target="_blank" class="page-item-each py-10 flex-both-center narrow" href="https://www.x-kom.pl/p/695371-modem-zte-mf79n-usb-stick-wifi-b-g-n-4g-lte-150mbps.html?sm%3Dpb2DLJ98&sa=D&source=editors&ust=1751306806215026&usg=AOvVaw3smsmVAKytooZoou_W0QhG">
+            <img class="link-each-image" src="assets/images/zte.webp" alt="Powerbank 1"/>
+            <span class="item-title text-center">ZTE MF79N 4G/LTE</span>
+        </a>
+    </div>
+</div>
+
  <div class="page-item-wrap relative">
                         <div class="page-item flex-both-center absolute"></div>
                         <a target="_blank"  class="page-item-each py-10 flex-both-center" href="https://amzn.to/489eEws" data-id="261685" data-type="page_item">
@@ -124,6 +171,22 @@
             </div>
 
         </div> 
+
+<script>
+    document.getElementById("powerbank-button").addEventListener("click", function(event) {
+        event.preventDefault();
+        const section = document.getElementById("powerbank-extra");
+        section.style.display = section.style.display === "none" ? "block" : "none";
+    });
+
+    document.getElementById("router-button").addEventListener("click", function(event) {
+        event.preventDefault();
+        const section = document.getElementById("router-extra");
+        section.style.display = section.style.display === "none" ? "block" : "none";
+    });
+</script>
+
+
     </body>
 
     <!--
